@@ -1,0 +1,535 @@
+/*
+Theme Name: Mannly
+Theme URI: http://joncoop.blog.greenville.k12.sc.us/mannly/
+Author: Jon Cooper
+Author URI: http://joncoop.blog.greenville.k12.sc.us/
+Description: This is a theme designed for J.L. Mann teacher blogs. The color scheme is "Mannly" and it includes a footer with links and content specific to J.L. Mann. There is also a phone number field in the Contact Info area of the admin profile page. Both your email address and phone number are automatically displayed in footer of each page. The sidebar can be customized with widgets. Other areas are not "widgetizable" so that all Mann sites maintain a uniform look and feel. DO NOT ACTIVATE THIS THEME UNLESS YOU TEACH AT J.L. MANN. THERE IS UNEDITABLE, J.L. MANN SPECIFIC CONTENT IN THE FOOTER OF EACH PAGE.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: mannly colors, two-columns, right-sidebar, fixed-width
+Text Domain: mannly
+*/
+
+
+
+/********** Color Palette *********
+
+White:              #FFFFFF
+Very Light Gray:    #F5F5F5
+Light Gray:         #CCCCCC
+Medium Gray:        #777777
+Dark Gray:          #444444
+Black:              #000000
+
+Mann Blue:          #57B7DF
+Meduim Blue 1:      #466578
+Meduim Blue 2:      #3F5C6D (just a hair darker so links are easier to read on light backgrounds)
+
+Slate:              #1F2C35 (somewhat bluish)
+
+Mann Red:           #ED1D2E
+Brick Red:          #AA0000 (because Mann red looks a kinda pinkish on some non-white backgrounds)
+
+*/
+
+
+
+/********** Layout Styles **********/
+
+body {
+    background-color: #466578;
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+div#masthead {
+    background-color: #1F2C35;
+    box-shadow: 0px 7px 5px #232F37;
+    font-family: sans-serif;
+    margin: 0 0 17px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+div#frame {
+    background-color: #FFFFFF;
+    border-top: 10px solid #AA0000;
+    box-shadow: 5px 5px 5px #232F37;
+    margin: 0 auto 10px auto;
+    overflow: auto;
+    padding: 0;
+    width: 960px;
+}
+
+div#pages {
+    border-bottom: 5px solid #F5F5F5;
+    font-family: sans-serif;
+    margin: 20px 10px 30px 10px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+div#sidebar {
+    margin-bottom: 20px;
+    float: right;
+    width: 280px;
+}
+
+div#content {
+    margin-bottom: 20px;
+    margin: 0 310px 20px 0;
+}
+
+div#footer {
+    background-color: #CCCCCC;
+    clear: both;
+    font-family: sans-serif;
+    overflow: hidden;
+    padding: 10px;
+}
+
+div#credits {
+    color: #1F2C35;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px auto 10px auto;
+    text-align: right;
+    width: 960px;
+}
+
+
+
+/********** Common Styles **********/
+
+h1 {
+    color: #57B7DF;
+    font-size:  40px;
+    margin: 0;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 0;
+}
+
+h3 {
+    color: #1F2C35;
+    font-family: sans-serif;
+    font-size:  18px;
+    margin:  0 0 25px 20px;
+}
+
+h4 {
+    color: #1F2C35;
+    font-size: 18px;
+    margin:  0 0 15px 0;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+    font-size: 15px;
+    margin: 0 0 1em 0;
+}
+
+ol {
+    margin: 0 0 1em 40px;
+    padding: 0;
+}
+
+ul {
+    margin: 0 0 1em 40px;
+    padding: 0;
+}
+
+li {
+    font-size: 15px;
+}
+
+
+dl {
+
+}
+
+dd {
+    font-size: 15px;
+}
+
+blockquote {
+    border-left: 5px solid #F5F5F5;
+    font-size: 15px;
+    margin: 0 0 1em 25px;
+    padding-left: 10px;
+}
+
+pre {
+
+}
+
+code {
+
+}
+
+table {
+    border: 1px solid #1F2C35;
+    margin: 0 0 1em 0;
+}
+
+tr {
+
+}
+
+th {
+    background-color: #1F2C35;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 3px;
+}
+
+td {
+    font-size: 15px;
+    padding: 3px;
+}
+
+img {
+
+}
+
+a:link {
+    color: #3F5C6D;
+}
+
+a:active {
+    color: #3F5C6D;
+}
+
+a:visited {
+    color: #3F5C6D;
+}
+
+a:hover {
+    color: #1F2C35;
+    text-decoration: underline;
+}
+
+
+
+/********** masthead (Site name & tagline) Styles **********/
+
+div#mh_content {
+    margin:  0 auto 0 auto;
+    padding-right: 20px;
+    width: 960px;
+}
+
+
+#masthead a {
+    color: #57B7DF;
+    text-decoration: none;
+}
+
+#masthead a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+#mh_content form.searchform {
+    float: right;
+    margin:  10px 30px 0 0;
+    padding: 0;
+}
+
+.searchform label {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.searchform input {
+    border: 1px solid #CCCCCC;
+}
+
+.searchform .button {
+    background-color: #57B7DF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.searchform .button:hover {
+    background-color: #CCCCCC;
+}
+
+
+
+/********** pages (Pages) Styles **********/
+
+#pages ul {
+    list-style-type:  none;
+    margin:  0 auto 0 auto;
+    padding: 0;
+    text-decoration: none;
+    width: 1050px;
+}
+
+#pages li {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+#pages a {
+    color: #777777;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    text-decoration:  none;
+}
+
+#pages li.current_page_item a {
+    color: #AA0000;
+    background-color: #F5F5F5;
+}
+
+#pages a:hover {
+    text-decoration: underline;
+}
+
+
+
+/********** Post Styles **********/
+
+div.post {
+    margin: 0 20px 40px 20px;
+}
+
+.post h3 {
+    color: #466578;
+    font-family: serif;
+    font-size:  24px;
+    margin:  0 0 15px 0;
+}
+
+.post h3 a {
+    color: #466578;
+    text-decoration: none;
+}
+
+.post h3 a:hover {
+    text-decoration: underline;
+}
+
+.post h4.meta {
+    border-top: 1px solid #466578;
+    color: #466578;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: normal;
+    padding-top: 3px;
+}
+
+.meta a {
+    color: #466578;
+}
+
+.meta a:hover {
+    color: #777777;
+}
+
+p.more a {
+    color: #444444;
+    margin: 0 20px 20px 20px;
+    padding: 0px;
+}
+
+.newer {
+    text-align: left;
+}
+
+.older {
+    text-align: right
+}
+
+
+
+/********** Comment Styles **********/
+
+div.comments {
+    margin: 0 20px 40px 20px;
+}
+
+.comments h4 {
+    color: #777777;
+    margin: 0 0 15px 0;
+    padding-bottom: 5px;
+}
+
+.comments ol {
+
+}
+
+.comments li {
+    border-top: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+.comments li.alt {
+    background-color: #F5F5F5;
+}
+
+.comments h5.meta {
+    color: #444444;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    text-align: right;
+}
+
+.comments label {
+    font-size: 12px;
+}
+
+.comments textarea {
+    width: 100%;
+}
+
+
+
+/********** Widget Styles **********/
+
+div.widget {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    font-size:  15px;
+    margin: 0 20px 20px 0;
+}
+
+.widget h3 {
+    background-color: #aa0000;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.widget p, form {
+    margin: 5px;
+}
+
+.widget ul, .widget ol {
+    margin: 5px 5px 5px 15px;
+    padding: 0 0 0 5px;
+}
+
+.widget li {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.widget ul.categories {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.widget ul.categories li  {
+    padding: 0;
+}
+
+.postcount {
+    font-size: 11px;
+}
+
+#wp-calendar {
+    margin: 5px;
+    width: 248px;
+}
+
+.widget #contact {
+    background-color: #FFFFFF;
+    border: none;
+    font-size:  15px;
+    margin: 0 20px 20px 0;
+}
+
+#contact h3 {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #1F2C35;
+    color: #1F2C35;
+    font-size: 18px;
+    margin:  0 0 15px 0;
+}
+
+#calendar_wrap caption {
+    color: #1F2C35
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+
+
+/********** Footer Styles **********/
+
+div.logo {
+    float: left;
+    margin: 10px 40px 10px 10px;
+    width: 140px;
+}
+
+div.footercolumn {
+    float: left;
+    margin: 10px;
+    width: 230px;
+}
+
+#footer h4 {
+    font-size: 13px;
+    margin: 0 0 5px 0;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+#footer li {
+    font-size: 12px;
+}
+
+#footer a {
+    color: #1F2C35;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/********** Credits Styles **********/
+
+#credits p {
+
+}
+
+#credits a {
+    color: #1F2C35;
+    text-decoration: underline;
+}
+
+#credits a:hover {
+    color: #CCCCCC;
+}
